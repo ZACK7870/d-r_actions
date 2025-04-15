@@ -5,12 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run : echo "Hello world"
-  
-  check-repo: 
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repository
-        uses: actions/checkout@v2
-      - name: Run a script
-        run: echo "Running a script"
-
+      - name: checkout repo
+      - uses: actions/checkout@v4.2.2
+      - run: ls
