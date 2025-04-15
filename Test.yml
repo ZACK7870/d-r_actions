@@ -1,0 +1,14 @@
+confName: My workflow
+event: []
+job: 
+  name: My job
+  steps:
+    - name: Job1
+      type: shell
+      script: |
+        echo "Hello, world!"
+        echo "This is a test workflow."
+        echo "Goodbye!"
+    - name: Step2
+      type: shell
+      command: $TOTO
